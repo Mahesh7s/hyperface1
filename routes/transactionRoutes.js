@@ -1,7 +1,5 @@
 const express = require("express");
-const { addTransaction } = require("../controllers/transactionController");
-const tRouter= express.Router();
-
-tRouter.post("/add",addTransaction);
-
+const tRouter = express.Router()
+const transactionController = require("../controllers/transactionController")
+tRouter.post("/add",transactionController.addTransaction);
 module.exports=tRouter;
