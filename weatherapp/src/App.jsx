@@ -18,7 +18,7 @@ function App() {
   const { data, loading, error } = useFetch(apiUrl);
 
   return (
-    <div className="app">
+    <div>
       <h1> QuickWeather</h1>
       <SearchBar onSearch={setCity} />
       <WeatherDisplay data={data} loading={loading} error={error} />

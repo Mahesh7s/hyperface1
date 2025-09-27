@@ -6,7 +6,7 @@ const WeatherDisplay = React.memo(({ data, loading, error }) => {
   if (!data) return <p>Search for a city to see the weather</p>;
 
   return (
-    <div className="weather-card">
+    <div>
       <h2>{data.name}</h2>
       <p>{Math.round(data.main.temp)}°C</p>
       <p>{data.weather[0].main}</p>
